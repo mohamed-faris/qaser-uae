@@ -1135,9 +1135,118 @@
             margin-right: 0;
             margin-left: 0.5rem;
         }
+
+        /* ---------- Global mobile resets ---------- */
+img, video { max-width: 100%; height: auto; }   /* no overflow */
+.section { padding: 2rem 0; }                   /* less vertical stretch on mobile */
+.container { padding: 0 1rem; }
+
+/* Touch-friendly buttons/links */
+.btn, .filter-btn, .faq-question, .nav a { min-height: 44px; }
+
+/* ---------- Header & Nav ---------- */
+.header { position: sticky; top: 0; z-index: 100; }
+.logo { display: inline-flex; align-items: center; gap: .5rem; }
+.logo img.logo-img { height: 28px; width: auto; }
+
+/* Mobile nav drawer */
+@media (max-width: 768px) {
+  .header__content { gap: .75rem; }
+  .nav-toggle { display: inline-flex; }
+  .nav {
+    position: fixed;
+    inset: 64px 0 0 0;                /* below sticky header */
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    padding: 1rem 1.25rem 2rem;
+    gap: .75rem;
+    box-shadow: 0 10px 30px var(--shadow);
+    overflow-y: auto;
+  }
+  .nav.active { display: flex; }
+  .nav a { font-size: 1.05rem; padding: .5rem 0; }
+  /* prevent double underline animation on mobile */
+  .nav a::after { display: none; }
+}
+
+/* ---------- Hero ---------- */
+@media (max-width: 768px) {
+  .hero { padding: 3rem 0 2rem; }
+  .hero__text h1 { font-size: 1.9rem; line-height: 1.25; }
+  .hero__text p { font-size: 1rem; }
+  .hero__cta { gap: .75rem; }
+  .hero::before { opacity: .15; }     /* reduce heavy diagonal shape on small screens */
+}
+
+/* ---------- Before/After slider ---------- */
+.before-after { max-width: 900px; margin: 0 auto; }
+@media (max-width: 768px) {
+  .before-after { max-width: 100%; border-radius: 10px; }
+  .before-after__container { aspect-ratio: 16/10; } /* shorter on phones */
+  .before-after__handle { width: 32px; height: 32px; }
+}
+
+/* ---------- Portfolio grid ---------- */
+.portfolio-grid { gap: 1rem; }
+@media (max-width: 768px) {
+  .portfolio-grid { grid-template-columns: 1fr; } /* one column */
+  .portfolio-item { aspect-ratio: 4/3; padding: 8px; }
+  .portfolio-item img { object-fit: contain; }
+}
+
+/* ---------- FAQ ---------- */
+@media (max-width: 768px) {
+  .faq-question { font-size: 1rem; padding: .9rem 1rem; }
+  .faq-item.active .faq-answer { max-height: 400px; } /* allow taller answer on phones */
+}
+
+/* ---------- About / Contact cards ---------- */
+@media (max-width: 768px) {
+  .about-content, .contact-content { grid-template-columns: 1fr; gap: 1.25rem; }
+  .contact-info { padding: 1.25rem; }
+}
+
+/* ---------- Typography scale ---------- */
+@media (max-width: 480px) {
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.4rem; }
+  .section-header p { font-size: .98rem; }
+  .btn { padding: .75rem 1.25rem; font-size: .95rem; }
+}
+
+
+
+
     </style>
 </head>
 <body>
+    <script>
+(function(){
+  const btn = document.getElementById('nav-toggle');
+  const nav = document.getElementById('nav');
+  if (!btn || !nav) return;
+
+  btn.setAttribute('aria-label','Toggle navigation');
+  btn.setAttribute('aria-expanded','false');
+
+  btn.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('active');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.body.style.overflow = isOpen ? 'hidden' : '';  // prevent background scroll
+  });
+
+  // Close on link click
+  nav.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click', ()=>{
+      nav.classList.remove('active');
+      btn.setAttribute('aria-expanded','false');
+      document.body.style.overflow = '';
+    });
+  });
+})();
+</script>
+
     <script>
 function setComparisonAspect() {
   const container = document.querySelector('.before-after__container');
@@ -1196,9 +1305,9 @@ document.addEventListener('DOMContentLoaded', setComparisonAspect);
     <header class="header">
         <div class="container">
             <div class="header__content">
-                <a href="#home" class="logo" id="logo-text">
-                    Qaser Al Shamali <span class="accent">Decoration</span>
-                </a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qaser Al Shamali</title>
+  <link rel="icon" type="image/png" href="logo.png">
                 <nav class="nav" id="nav">
                     <a href="#home" class="nav-link active" data-key="nav-home">Home</a>
                     <a href="#services" class="nav-link" data-key="nav-services">Services</a>

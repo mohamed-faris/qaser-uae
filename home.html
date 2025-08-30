@@ -1,0 +1,2585 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qaser Al Shamali - Modern Gypsum & Painting for Elegant Interiors | Abu Dhabi</title>
+    <meta name="description" content="Professional gypsum board, false ceilings, and interior painting services in Abu Dhabi, Al Ain, and Dubai. 17+ years of experience with premium materials and on-time delivery.">
+    <meta name="canonical" content="https://qaser-decoration.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Qaser Al Shamali - Modern Gypsum & Painting Works">
+    <meta property="og:description" content="Professional decoration services - gypsum board, painting, false ceilings in UAE">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qaser-decoration.com">
+    <meta property="og:image" content="https://qaser-decoration.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Qaser Al Shamali - Modern Gypsum & Painting Works">
+    <meta name="twitter:description" content="Professional decoration services - gypsum board, painting, false ceilings in UAE">
+    
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Qaser Al Shamali - Decoration & Painting Works",
+        "description": "Professional gypsum board, false ceilings, and interior painting services",
+        "telephone": "050-742-7070",
+        "email": "qaseralshamali@gmail.com",
+        "address": {
+            "@type": "0000",
+            "addressLocality": "Abu Dhabi",
+            "addressCountry": "AE"
+        },
+        "areaServed": ["Abu Dhabi", "Al Ain"],
+        "openingHours": "Sa-Th 08:00-18:00",
+        "serviceType": ["Gypsum Board Installation", "Interior Painting", "False Ceilings", "Decorative Finishes"]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-white: #ffffff;
+            --off-white: #fefefe;
+            --beige: #f5f3f0;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --text-dark: #2c3e50;
+            --text-medium: #6c757d;
+            --gold: #d4af37;
+            --gold-hover: #b8941f;
+            --success: #28a745;
+            --warning: #ffc107;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --shadow-hover: rgba(0, 0, 0, 0.15);
+            --border-radius: 8px;
+            --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-arabic: 'Tahoma', 'Arial Unicode MS', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-system);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--primary-white);
+        }
+
+        [dir="rtl"] {
+            font-family: var(--font-arabic);
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section--light {
+            background-color: var(--beige);
+        }
+
+        .text-center { text-align: center; }
+        .text-gold { color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--light-gray);
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .top-bar__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar__contact a {
+            color: var(--text-medium);
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        .top-bar__contact a:hover {
+            color: var(--gold);
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .lang-switch button {
+            background: none;
+            border: 1px solid var(--medium-gray);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .lang-switch button.active {
+            background: var(--gold);
+            color: white;
+            border-color: var(--gold);
+        }
+
+        /* Header */
+        .header {
+            background: var(--primary-white);
+            box-shadow: 0 2px 10px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .logo .accent { color: var(--gold); }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav a:hover, .nav a.active {
+            color: var(--gold);
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav a:hover::after, .nav a.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--beige) 0%, var(--off-white) 100%);
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: var(--medium-gray);
+            opacity: 0.3;
+            transform: skewX(-15deg);
+            transform-origin: top;
+        }
+
+        .hero__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero__text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero__text p {
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+        }
+
+        .hero__cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            gap: 0.5rem;
+        }
+
+        .btn--primary {
+            background: var(--gold);
+            color: white;
+        }
+
+        .btn--primary:hover {
+            background: var(--gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn--outline {
+            background: transparent;
+            color: var(--text-dark);
+            border: 2px solid var(--medium-gray);
+        }
+
+        .btn--outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .hero__badges {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .badge {
+            text-align: center;
+        }
+
+        .badge__number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--gold);
+            display: block;
+        }
+
+        .badge__text {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        .hero__visual {
+            background: var(--light-gray);
+            aspect-ratio: 4/3;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-medium);
+        }
+
+        /* Trust Strip */
+        .trust-strip {
+            padding: 2rem 0;
+            background: var(--off-white);
+        }
+
+        .trust-strip__logos {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-logo {
+            width: 120px;
+            height: 60px;
+            background: var(--medium-gray);
+            border-radius: var(--border-radius);
+            opacity: 0.6;
+        }
+
+        /* Services */
+        .services__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow-hover);
+        }
+
+        .service-card__icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            background: var(--beige);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+        }
+
+        /* Before/After Slider */
+        .before-after {
+            position: relative;
+            max-width: 70%;
+            margin: 0 auto;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .before-after__container{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/7
+  /* remove hard aspect ratio; JS will set it to match the images */
+}
+
+.before-after__image{
+  position: absolute;
+  inset: 0;
+  background: #0000; /* transparent or your section color */
+}
+
+.before-after__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* <-- key change: no crop */
+  display: block;
+}
+
+
+
+        .before-after__after {
+            clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+            background: var(--light-gray);
+        }
+
+        .before-after__slider {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: var(--gold);
+            cursor: ew-resize;
+            transform: translateX(-50%);
+        }
+
+        .before-after__handle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 40px;
+            background: var(--gold);
+            border: 3px solid white;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* Color Palette */
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .color-chip {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 3px 10px var(--shadow);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .color-chip:hover {
+            transform: scale(1.1);
+        }
+
+        .color-chip--1 { background: #9C836F; }
+        .color-chip--2 { background: #B19D8D; }
+        .color-chip--3 { background: #C6B7AB; }
+        .color-chip--4 { background: #DAD1CA; }
+        .color-chip--5 { background: #EFEBE8; }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1rem;
+            background: var(--light-gray);
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1rem;
+            max-height: 200px;
+        }
+
+        /* Portfolio */
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid var(--medium-gray);
+            background: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            border-color: var(--gold);
+            background: var(--gold);
+            color: white;
+        }
+
+        /* keep your grid as is */
+/* Responsive grid */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Uniform frame for every card */
+.portfolio-item{
+  aspect-ratio: 4/3;               /* same frame for all (change to 1/1 or 16/10 if you prefer) */
+  background: var(--light-gray);    /* visible “letterbox” area */
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px var(--shadow);
+  overflow: hidden;
+
+  /* center the image inside the frame */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px;                    /* small inner margin; tweak or remove */
+}
+
+/* Show the whole photo inside the frame */
+.portfolio-item img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;              /* no cropping */
+  display:block;
+  border-radius: calc(var(--border-radius) - 6px);
+}
+
+
+/* OPTIONAL: make the photo a bit smaller inside the frame */
+.portfolio-item{ padding: 8px; }      /* inner margin; remove if not wanted */
+
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item.hidden {
+            display: none;
+        }
+
+        /* Process Timeline */
+        .process-timeline {
+            display: flex;
+            justify-content: space-between;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            right: 60px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        .process-step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .process-step__icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gold);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-step h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .process-step p {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        /* Testimonials */
+        .testimonials-carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px var(--shadow);
+            text-align: center;
+            display: none;
+        }
+
+        .testimonial.active {
+            display: block;
+        }
+
+        .testimonial__stars {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial__text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial__author {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--medium-gray);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .carousel-dot.active {
+            background: var(--gold);
+        }
+
+        /* About */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-highlights {
+            list-style: none;
+        }
+
+        .about-highlights li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .about-highlights li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* CTA Band */
+        .cta-band {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-hover) 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-band h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-band p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Contact Form */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--medium-gray);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .form-control.error {
+            border-color: #dc3545;
+        }
+
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        .contact-info {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 1rem;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background: var(--gold-hover);
+            transform: translateY(-3px);
+        }
+
+        .back-to-top.visible {
+            display: flex;
+        }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--text-dark);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+            z-index: 1000;
+        }
+
+        .cookie-banner.visible {
+            transform: translateY(0);
+        }
+
+        .cookie-banner button {
+            background: var(--gold);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+
+        /* Toast Messages */
+        .toast {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            color: white;
+            font-weight: 600;
+            transform: translateX(100%);
+            transition: transform 0.3s;
+            z-index: 1001;
+        }
+
+        .toast.visible {
+            transform: translateX(0);
+        }
+
+        .toast.success {
+            background: var(--success);
+        }
+
+        .toast.error {
+            background: #dc3545;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1002;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            background: white;
+            border-radius: var(--border-radius);
+            position: relative;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--gold);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero__content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .process-timeline {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .process-timeline::before {
+                display: none;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 5px 15px var(--shadow);
+                display: none;
+            }
+            
+            .nav.active {
+                display: flex;
+            }
+            
+            .nav-toggle {
+                display: block;
+            }
+            
+            .hero__text h1 {
+                font-size: 2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .hero__cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero__badges {
+                justify-content: center;
+            }
+            
+            .trust-strip__logos {
+                gap: 1rem;
+            }
+            
+            .trust-logo {
+                width: 100px;
+                height: 50px;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            .section {
+                padding: 2rem 0;
+            }
+            
+            .btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .service-card {
+                padding: 1.5rem;
+            }
+            
+            .hero {
+                padding: 3rem 0;
+            }
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .nav {
+            gap: 2rem;
+        }
+
+        [dir="rtl"] .hero__cta {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .contact-item {
+            flex-direction: row-reverse;
+        }
+
+        [dir="rtl"] .process-timeline::before {
+            left: 60px;
+            right: 60px;
+        }
+
+        [dir="rtl"] .about-highlights li::before {
+            margin-right: 0;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <script>
+function setComparisonAspect() {
+  const container = document.querySelector('.before-after__container');
+  const imgBefore = document.querySelector('.before-after__image:not(.before-after__after) img');
+  const imgAfter  = document.querySelector('.before-after__after img');
+  if (!container || !imgBefore || !imgAfter) return;
+
+  function apply() {
+    const r1 = imgBefore.naturalWidth / imgBefore.naturalHeight || 16/9;
+    const r2 = imgAfter.naturalWidth / imgAfter.naturalHeight  || r1;
+    // Choose a ratio that lets BOTH images fit without cropping.
+    const ratio = Math.max(r1, r2); // wider ratio wins to avoid vertical squeeze
+    // Modern browsers:
+    container.style.aspectRatio = ratio;
+    // Fallback if aspect-ratio unsupported:
+    // container.style.height = (container.clientWidth / ratio) + 'px';
+  }
+
+  if (imgBefore.complete && imgAfter.complete) apply();
+  else {
+    imgBefore.addEventListener('load', apply);
+    imgAfter.addEventListener('load', apply);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', setComparisonAspect);
+</script>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar__content">
+                <div class="top-bar__contact">
+                    <a href="tel:050-742-7070" id="phone-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span id="phone-display">050 742 7070</span>
+                    </a>
+                    <a href="https://wa.me/971507427070" target="_blank" id="whatsapp-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.485 3.488"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">العربية</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#home" class="logo" id="logo-text">
+                    Qaser Al Shamali <span class="accent">Decoration</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="#home" class="nav-link active" data-key="nav-home">Home</a>
+                    <a href="#services" class="nav-link" data-key="nav-services">Services</a>
+                    <a href="#gypsum" class="nav-link" data-key="nav-gypsum">Gypsum & Ceilings</a>
+                    <a href="#painting" class="nav-link" data-key="nav-painting">Painting</a>
+                    <a href="#portfolio" class="nav-link" data-key="nav-portfolio">Portfolio</a>
+                    <a href="#process" class="nav-link" data-key="nav-process">Process</a>
+                    <a href="#testimonials" class="nav-link" data-key="nav-testimonials">Testimonials</a>
+                    <a href="#about" class="nav-link" data-key="nav-about">About</a>
+                    <a href="#contact" class="nav-link" data-key="nav-contact">Contact</a>
+                </nav>
+                <button class="nav-toggle" id="nav-toggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text fade-in">
+                    <h1 data-key="hero-title">Modern Gypsum & Painting for Elegant Interiors</h1>
+                    <p data-key="hero-subtitle">Transform your space with premium gypsum board installations, false ceilings, and professional painting services across UAE.</p>
+                    <div class="hero__cta">
+                        <a href="#contact" class="btn btn--primary" data-key="hero-cta1">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            Request Quote
+                        </a>
+                        <a href="https://wa.me/971507427070" class="btn btn--outline" id="whatsapp-cta" target="_blank" data-key="hero-cta2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.485 3.488"/>
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                    <div class="hero__badges">
+                        <div class="badge">
+                            <span class="badge__number" data-target="17">0</span>
+                            <span class="badge__text" data-key="hero-badge1">Years Experience</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge__number" data-target="750">0</span>
+                            <span class="badge__text" data-key="hero-badge2">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__visual fade-in">
+                    <!-- TODO: Replace with actual hero image -->
+                    <div style="color: #666; text-align: center;">
+                        <img src="first.png" alt="Premium Interior Solutions" width="550" height="550" style="border-radius:8px;">
+                        <p>Premium Interior Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+
+
+    <!-- Services Overview -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-key="services-title">Our Premium Services</h2>
+                <p data-key="services-subtitle">Professional decoration solutions with premium materials and expert craftsmanship</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="service1-title">Gypsum Board & False Ceilings</h3>
+                    <p data-key="service1-desc">Premium gypsum board installations with modern designs for residential and commercial spaces.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="service2-title">Feature Walls & Embossed Gypsum</h3>
+                    <p data-key="service2-desc">Create stunning focal points with textured and embossed gypsum feature walls.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="service3-title">Interior & Exterior Painting</h3>
+                    <p data-key="service3-desc">Professional painting services using premium paints for lasting beauty and protection.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="service4-title">Decorative Finishes</h3>
+                    <p data-key="service4-desc">Specialized stucco, metallic finishes, and decorative coatings for unique aesthetics.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-card__icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2zM8.5 17.5L3 12l1.5-1.5L8.5 14.5 19 4l1.5 1.5L8.5 17.5z"/>
+                        </svg>
+                    </div>
+                    <h3 data-key="service5-title">Lighting Integration</h3>
+                    <p data-key="service5-desc">Seamless integration of LED cove lighting and spotlights with ceiling designs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gypsum & Ceilings Focus -->
+    <section class="section section--light" id="gypsum">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-key="gypsum-title">Gypsum & Ceiling Excellence</h2>
+                <p data-key="gypsum-subtitle">Transform your ceiling into a masterpiece with our expert gypsum installations</p>
+            </div>
+            <div class="before-after fade-in">
+                <div class="before-after__container">
+                    <div class="before-after__image">
+                        <!-- TODO: Replace with actual before image -->
+                         
+                        <div style="color: #999;">
+                                                    <img src="before.jpg" alt="Premium Interior Solutions" width="700" height="600" style="border-radius:8px;">
+
+                        </div>
+                    </div>
+                    <div class="before-after__image before-after__after">
+                        <!-- TODO: Replace with actual after image -->
+                        <div style="color: #666;">
+                                                    <img src="after.png" alt="Premium Interior Solutions" width="700" height="600" style="border-radius:8px;">
+
+                        </div>
+                    </div>
+                    <div class="before-after__slider">
+                        <div class="before-after__handle">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 6l6 6-6 6V6z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Painting Section -->
+    <section class="section" id="painting">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-key="painting-title">Professional Painting Services</h2>
+                <p data-key="painting-subtitle">Premium paints and expert application for stunning, long-lasting results</p>
+            </div>
+            
+            <div class="color-palette fade-in">
+                <div class="color-chip color-chip--1" title="Earth Tones"></div>
+                <div class="color-chip color-chip--2" title="Nature Green"></div>
+                <div class="color-chip color-chip--3" title="Ocean Blue"></div>
+                <div class="color-chip color-chip--4" title="Golden Sand"></div>
+                <div class="color-chip color-chip--5" title="Royal Purple"></div>
+            </div>
+
+            <div class="fade-in" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-key="faq1-q">What types of paint do you use?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-key="faq1-a">We use premium brands including Dulux, Jotun, and Asian Paints, selecting the best product for each specific application and environment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-key="faq2-q">How long does the painting process take?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-key="faq2-a">Timeline depends on project size and complexity. Typical residential rooms take 2-3 days, while larger commercial projects may take 1-2 weeks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-key="faq3-q">Do you provide color consultation?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-key="faq3-a">Yes, our experts provide professional color consultation to help you choose the perfect palette that matches your style and lighting conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section section--light" id="portfolio">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-key="portfolio-title">Our Recent Projects</h2>
+                <p data-key="portfolio-subtitle">Discover our latest works showcasing quality craftsmanship and attention to detail</p>
+            </div>
+            
+            <div class="portfolio-filter fade-in">
+                <button class="filter-btn active" data-filter="all" data-key="filter-all">All</button>
+
+            </div>
+            
+            <div class="portfolio-grid fade-in">
+                <!-- TODO: Replace with actual project images -->
+                <div class="portfolio-item" data-category="gypsum" data-image="first.png">
+                    <img src="first.png" loading="lazy">
+                </div>
+                <div class="portfolio-item" data-category="painting" data-image="painting1.jpg">
+                    <img src="second.png" loading="lazy" >
+                </div>
+                <div class="portfolio-item" data-category="ceilings" data-image="ceiling1.jpg">
+                    <img src="third.png">
+                </div>
+                <div class="portfolio-item" data-category="minimal gypsum" data-image="minimal1.jpg">
+                    <img src="four.jpeg" width="400" height="400">
+                </div>
+                <div class="portfolio-item" data-category="painting" data-image="painting2.jpg">
+                    <img src="five.png" width="400" height="400">
+                </div>
+                <div class="portfolio-item" data-category="ceilings gypsum" data-image="ceiling2.jpg">
+                    <img src="six.jpeg" width="400" height="400">
+                </div>
+                <div class="portfolio-item" data-category="minimal" data-image="minimal2.jpg">
+                    <img src="seven.png" width="400" height="400">
+                </div>
+                <div class="portfolio-item" data-category="gypsum" data-image="gypsum2.jpg">
+                    <img src="eight.jpeg" width="400" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-key="process-title">Our Work Process</h2>
+                <p data-key="process-subtitle">From consultation to completion, we ensure quality at every step</p>
+            </div>
+            
+            <div class="process-timeline fade-in">
+                <div class="process-step">
+                    <div class="process-step__icon">1</div>
+                    <h4 data-key="step1-title">Consultation</h4>
+                    <p data-key="step1-desc">Initial site visit and requirement analysis</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__icon">2</div>
+                    <h4 data-key="step2-title">Design</h4>
+                    <p data-key="step2-desc">Custom design and material planning</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__icon">3</div>
+                    <h4 data-key="step3-title">Materials</h4>
+                    <p data-key="step3-desc">Premium quality material procurement</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__icon">4</div>
+                    <h4 data-key="step4-title">Execution</h4>
+                    <p data-key="step4-desc">Expert installation and finishing</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__icon">5</div>
+                    <h4 data-key="step5-title">Handover</h4>
+                    <p data-key="step5-desc">Final inspection and project delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--light" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-key="testimonials-title">What Our Clients Say</h2>
+                <p data-key="testimonials-subtitle">Real feedback from satisfied customers across UAE</p>
+            </div>
+            
+            <div class="testimonials-carousel fade-in">
+                <div class="testimonial active">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text" data-key="testimonial1-text">"Exceptional work quality and attention to detail. The gypsum ceiling in our villa looks absolutely stunning. Highly recommended!"</p>
+                    <div class="testimonial__author" data-key="testimonial1-author">Ahmed Al Mansouri, Abu Dhabi</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text" data-key="testimonial2-text">"Professional team, quality materials, and on-time completion. Our office painting project exceeded expectations."</p>
+                    <div class="testimonial__author" data-key="testimonial2-author">Sarah Johnson, Dubai</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text" data-key="testimonial3-text">"Best decoration company in UAE! The false ceiling design transformed our living room completely."</p>
+                    <div class="testimonial__author" data-key="testimonial3-author">Mohammed Hassan, Al Ain</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__stars">★★★★★</div>
+                    <p class="testimonial__text" data-key="testimonial4-text">"Premium quality work with competitive pricing. The team was professional and completed everything on schedule."</p>
+                    <div class="testimonial__author" data-key="testimonial4-author">Lisa Martinez, Abu Dhabi</div>
+                </div>
+            </div>
+            
+            <div class="carousel-dots">
+                <span class="carousel-dot active" data-slide="0"></span>
+                <span class="carousel-dot" data-slide="1"></span>
+                <span class="carousel-dot" data-slide="2"></span>
+                <span class="carousel-dot" data-slide="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="fade-in">
+                    <h2 data-key="about-title">Why Choose Qaser Al Shamali?</h2>
+                    <p data-key="about-text">With over 17 years of experience in the decoration industry, we have established ourselves as the leading provider of premium gypsum and painting services across UAE. Our commitment to excellence and customer satisfaction sets us apart.</p>
+                    
+                    <ul class="about-highlights">
+                        <li data-key="about-point1">On-time project completion guaranteed</li>
+                        <li data-key="about-point2">Premium quality materials only</li>
+                        <li data-key="about-point3">Comprehensive warranty coverage</li>
+                        <li data-key="about-point4">Expert craftsmen and designers</li>
+                        <li data-key="about-point5">Competitive transparent pricing</li>
+                        <li data-key="about-point6">24/7 customer support</li>
+                    </ul>
+                </div>
+                <div class="fade-in">
+                    <!-- TODO: Replace with actual company image -->
+                    <div style="background: var(--medium-gray); aspect-ratio: 4/3; border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; color: var(--text-medium);">
+                        <div style="text-align: center;">
+                            <img src="final.png" width="580" height="650">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="cta-band">
+        <div class="container">
+            <div class="fade-in">
+                <h2 data-key="cta-title">Ready to Transform Your Space?</h2>
+                <p data-key="cta-subtitle">Get a free consultation and quote for your next decoration project</p>
+                <a href="#contact" class="btn btn--primary" style="background: white; color: var(--gold);" data-key="cta-button">Get Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 data-key="contact-title">Contact Us</h2>
+                <p data-key="contact-subtitle">Ready to start your project? Get in touch with our expert team</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="fade-in">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-key="form-name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-key="form-phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                            <div class="error-message" id="phone-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" data-key="form-city">City</label>
+                            <select id="city" name="city" class="form-control">
+                                <option value="">Select City</option>
+                                <option value="abu-dhabi">Abu Dhabi</option>
+                                <option value="al-ain">Al Ain</option>
+                                <option value="dubai">Dubai</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service" data-key="form-service">Service Required</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select Service</option>
+                                <option value="gypsum">Gypsum Board & Ceilings</option>
+                                <option value="painting">Interior/Exterior Painting</option>
+                                <option value="decorative">Decorative Finishes</option>
+                                <option value="lighting">Lighting Integration</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-key="form-message">Project Details</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your project requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary" data-key="form-submit">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info fade-in">
+                    <h3 data-key="contact-info-title">Get In Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong data-key="contact-phone-label">Phone</strong>
+                            <p id="contact-phone-display">050 742 7070</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.485 3.488"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong data-key="contact-whatsapp-label">WhatsApp</strong>
+                            <p><a href="https://wa.me/971507427070" target="_blank" id="whatsapp-contact">050 742 7070</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong data-key="contact-email-label">Email</strong>
+                            <p><a href="mailto:qaseralshamali@gmail.com">qaseralshamali@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong data-key="contact-areas-label">Service Areas</strong>
+                            <p data-key="contact-areas">Abu Dhabi, Al Ain</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong data-key="contact-hours-label">Contact Hours</strong>
+                            <p data-key="contact-hours">24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-key="footer-company">Qaser Al Shamali</h3>
+                    <p data-key="footer-tagline">Modern gypsum & painting for elegant interiors across UAE</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://wa.me/971507427070" target="_blank" style="color: var(--gold); margin-right: 1rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.485 3.488"/>
+                            </svg>
+                        </a>
+                        <a href="tel:050-742-7070" style="color: var(--gold);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-key="footer-services-title">Services</h3>
+                    <ul>
+                        <li><a href="#services" data-key="footer-service1">Gypsum Board & Ceilings</a></li>
+                        <li><a href="#services" data-key="footer-service2">Interior & Exterior Painting</a></li>
+                        <li><a href="#services" data-key="footer-service3">Decorative Finishes</a></li>
+                        <li><a href="#services" data-key="footer-service4">Feature Walls</a></li>
+                        <li><a href="#services" data-key="footer-service5">Lighting Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-key="footer-links-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-key="footer-link1">Home</a></li>
+                        <li><a href="#about" data-key="footer-link2">About Us</a></li>
+                        <li><a href="#portfolio" data-key="footer-link3">Portfolio</a></li>
+                        <li><a href="#testimonials" data-key="footer-link4">Testimonials</a></li>
+                        <li><a href="#contact" data-key="footer-link5">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-key="footer-areas-title">Service Areas</h3>
+                    <ul>
+                        <li data-key="footer-area1">Abu Dhabi</li>
+                        <li data-key="footer-area2">Al Ain</li>
+                    
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">
+                        <strong data-key="footer-hours">Business Hours:</strong><br>
+                        <span data-key="footer-hours-detail">24/7</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Qaser Al Shamali Decoration & Painting Works. <span data-key="footer-rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l-8 8h5v10h6V10h5l-8-8z"/>
+        </svg>
+    </button>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookie-banner">
+        <p data-key="cookie-message">We use cookies to enhance your browsing experience and provide personalized content.</p>
+        <button id="cookie-accept" data-key="cookie-accept">Accept</button>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content" id="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+        </div>
+    </div>
+
+    <script>
+        // TODO: Update phone number here
+        const COMPANY_PHONE = '050 742 7070';
+        const WHATSAPP_NUMBER = '971507427070';
+
+        // i18n translations
+        const translations = {
+  en: {
+    // Navigation
+    'nav-home': 'Home',
+    'nav-services': 'Services',
+    'nav-gypsum': 'Gypsum & Ceilings',
+    'nav-painting': 'Painting',
+    'nav-portfolio': 'Portfolio',
+    'nav-process': 'Process',
+    'nav-testimonials': 'Testimonials',
+    'nav-about': 'About',
+    'nav-contact': 'Contact',
+
+    // Hero
+    'hero-title': 'Modern Gypsum & Painting for Elegant Interiors',
+    'hero-subtitle': 'Transform your space with premium gypsum board installations, false ceilings, and professional painting services across UAE.',
+    'hero-cta1': 'Request Quote',
+    'hero-cta2': 'WhatsApp',
+    'hero-badge1': 'Years Experience',
+    'hero-badge2': 'Projects Completed',
+
+    // Services
+    'services-title': 'Our Premium Services',
+    'services-subtitle': 'Professional decoration solutions with premium materials and expert craftsmanship',
+    'service1-title': 'Gypsum Board & False Ceilings',
+    'service1-desc': 'Premium gypsum board installations with modern designs for residential and commercial spaces.',
+    'service2-title': 'Feature Walls & Embossed Gypsum',
+    'service2-desc': 'Create stunning focal points with textured and embossed gypsum feature walls.',
+    'service3-title': 'Interior & Exterior Painting',
+    'service3-desc': 'Professional painting services using premium paints for lasting beauty and protection.',
+    'service4-title': 'Decorative Finishes',
+    'service4-desc': 'Specialized stucco, metallic finishes, and decorative coatings for unique aesthetics.',
+    'service5-title': 'Lighting Integration',
+    'service5-desc': 'Seamless integration of LED cove lighting and spotlights with ceiling designs.',
+
+    // Gypsum
+    'gypsum-title': 'Gypsum & Ceiling Excellence',
+    'gypsum-subtitle': 'Transform your ceiling into a masterpiece with our expert gypsum installations',
+
+    // Painting
+    'painting-title': 'Professional Painting Services',
+    'painting-subtitle': 'Premium paints and expert application for stunning, long-lasting results',
+
+    // FAQ
+    'faq1-q': 'What types of paint do you use?',
+    'faq1-a': 'We use premium brands including Dulux, Jotun, and Asian Paints, selecting the best product for each specific application and environment.',
+    'faq2-q': 'How long does the painting process take?',
+    'faq2-a': 'Timeline depends on project size and complexity. Typical residential rooms take 2–3 days, while larger commercial projects may take 1–2 weeks.',
+    'faq3-q': 'Do you provide color consultation?',
+    'faq3-a': 'Yes, we provide professional color consultation to help you choose the perfect palette for your style and lighting.',
+
+    // Portfolio
+    'portfolio-title': 'Our Recent Projects',
+    'portfolio-subtitle': 'Discover our latest works showcasing quality craftsmanship and attention to detail',
+    'filter-all': 'All',
+    'filter-gypsum': 'Gypsum',
+    'filter-painting': 'Painting',
+    'filter-ceilings': 'Ceilings',
+    'filter-minimal': 'Minimal',
+
+    // Process
+    'process-title': 'Our Work Process',
+    'process-subtitle': 'From consultation to completion, we ensure quality at every step',
+    'step1-title': 'Consultation',
+    'step1-desc': 'Initial site visit and requirement analysis',
+    'step2-title': 'Design',
+    'step2-desc': 'Custom design and material planning',
+    'step3-title': 'Materials',
+    'step3-desc': 'Premium quality material procurement',
+    'step4-title': 'Execution',
+    'step4-desc': 'Expert installation and finishing',
+    'step5-title': 'Handover',
+    'step5-desc': 'Final inspection and project delivery',
+
+    // Testimonials
+    'testimonials-title': 'What Our Clients Say',
+    'testimonials-subtitle': 'Real feedback from satisfied customers across UAE',
+    'testimonial1-text': 'Exceptional work quality and attention to detail. The gypsum ceiling in our villa looks absolutely stunning. Highly recommended!',
+    'testimonial1-author': 'Ahmed Al Mansouri, Abu Dhabi',
+    'testimonial2-text': 'Professional team, quality materials, and on-time completion. Our office painting project exceeded expectations.',
+    'testimonial2-author': 'Sarah Johnson, Dubai',
+    'testimonial3-text': 'Best decoration company in UAE! The false ceiling design transformed our living room completely.',
+    'testimonial3-author': 'Mohammed Hassan, Al Ain',
+    'testimonial4-text': 'Premium quality work with competitive pricing. The team was professional and completed everything on schedule.',
+    'testimonial4-author': 'Lisa Martinez, Abu Dhabi',
+
+    // About
+    'about-title': 'Why Choose Qaser Al Shamali?',
+    'about-text': 'With over 17 years of experience in the decoration industry, we have established ourselves as the leading provider of premium gypsum and painting services across UAE. Our commitment to excellence and customer satisfaction sets us apart.',
+    'about-point1': 'On-time project completion guaranteed',
+    'about-point2': 'Premium quality materials only',
+    'about-point3': 'Comprehensive warranty coverage',
+    'about-point4': 'Expert craftsmen and designers',
+    'about-point5': 'Competitive transparent pricing',
+    'about-point6': '24/7 customer support',
+
+    // CTA
+    'cta-title': 'Ready to Transform Your Space?',
+    'cta-subtitle': 'Get a free consultation and quote for your next decoration project',
+    'cta-button': 'Get Free Quote',
+
+    // Contact
+    'contact-title': 'Contact Us',
+    'contact-subtitle': 'Ready to start your project? Get in touch with our expert team',
+    'form-name': 'Full Name *',
+    'form-phone': 'Phone Number *',
+    'form-city': 'City',
+    'form-service': 'Service Required',
+    'form-message': 'Project Details',
+    'form-submit': 'Send Message',
+    'contact-info-title': 'Get In Touch',
+    'contact-phone-label': 'Phone',
+    'contact-whatsapp-label': 'WhatsApp',
+    'contact-email-label': 'Email',
+    'contact-areas-label': 'Service Areas',
+    'contact-areas': 'Abu Dhabi, Al Ain',
+    'contact-hours-label': 'Business Hours',
+    'contact-hours': 'Saturday - Thursday: 8:00 AM - 6:00 PM',
+
+    // Footer
+    'footer-company': 'Qaser Al Shamali',
+    'footer-tagline': 'Modern gypsum & painting for elegant interiors across UAE',
+    'footer-services-title': 'Services',
+    'footer-service1': 'Gypsum Board & Ceilings',
+    'footer-service2': 'Interior & Exterior Painting',
+    'footer-service3': 'Decorative Finishes',
+    'footer-service4': 'Feature Walls',
+    'footer-service5': 'Lighting Integration',
+    'footer-links-title': 'Quick Links',
+    'footer-link1': 'Home',
+    'footer-link2': 'About Us',
+    'footer-link3': 'Portfolio',
+    'footer-link4': 'Testimonials',
+    'footer-link5': 'Contact',
+    'footer-areas-title': 'Service Areas',
+    'footer-area1': 'Abu Dhabi',
+    'footer-area2': 'Al Ain',
+    'footer-hours': 'Business Hours:',
+    'footer-hours-detail': '24/7',
+    'footer-rights': 'All rights reserved.',
+
+    // Cookie & Toast
+    'cookie-message': 'We use cookies to enhance your browsing experience and provide personalized content.',
+    'cookie-accept': 'Accept',
+    'form-success': 'Message sent successfully! We will contact you soon.',
+    'form-error': 'Please fill in all required fields correctly.'
+  },
+
+  ar: {
+    // Navigation
+    'nav-home': 'الرئيسية',
+    'nav-services': 'الخدمات',
+    'nav-gypsum': 'الجبس والأسقف',
+    'nav-painting': 'الدهان',
+    'nav-portfolio': 'معرض الأعمال',
+    'nav-process': 'العملية',
+    'nav-testimonials': 'آراء العملاء',
+    'nav-about': 'من نحن',
+    'nav-contact': 'اتصل بنا',
+
+    // Hero
+    'hero-title': 'جبس وطلاء عصري للديكورات الأنيقة',
+    'hero-subtitle': 'حوّل مساحتك مع تركيبات الجبس الفاخرة والأسقف المستعارة وخدمات الطلاء المهنية في جميع أنحاء دولة الإمارات.',
+    'hero-cta1': 'طلب عرض سعر',
+    'hero-cta2': 'واتساب',
+    'hero-badge1': 'سنة خبرة',
+    'hero-badge2': 'مشروع مكتمل',
+
+    // Services
+    'services-title': 'خدماتنا المتميزة',
+    'services-subtitle': 'حلول ديكور مهنية بمواد فاخرة وحرفية خبيرة',
+    'service1-title': 'ألواح الجبس والأسقف المستعارة',
+    'service1-desc': 'تركيبات جبس فاخرة بتصاميم عصرية للمساحات السكنية والتجارية.',
+    'service2-title': 'الجدران المميزة والجبس المنقوش',
+    'service2-desc': 'إنشاء نقاط محورية مذهلة بجدران جبس منقوشة.',
+    'service3-title': 'طلاء داخلي وخارجي',
+    'service3-desc': 'خدمات طلاء مهنية باستخدام دهانات فاخرة لجمال وحماية دائمين.',
+    'service4-title': 'تشطيبات ديكورية',
+    'service4-desc': 'جص وتشطيبات معدنية وطلاءات ديكورية لجماليات فريدة.',
+    'service5-title': 'تكامل الإضاءة',
+    'service5-desc': 'تكامل سلس لإضاءة LED والكشافات مع تصاميم الأسقف.',
+
+    // Gypsum
+    'gypsum-title': 'تميز الجبس والأسقف',
+    'gypsum-subtitle': 'حوّل سقفك إلى تحفة فنية مع تركيبات الجبس الخبيرة لدينا',
+
+    // Painting
+    'painting-title': 'خدمات الطلاء المهنية',
+    'painting-subtitle': 'دهانات فاخرة وتطبيق خبير لنتائج مذهلة وطويلة الأمد',
+
+    // FAQ
+    'faq1-q': 'ما أنواع الدهانات التي تستخدمونها؟',
+    'faq1-a': 'نستخدم علامات تجارية فاخرة مثل دولكس وجوتن وآسيا بينتس، ونختار المنتج الأنسب لكل تطبيق وبيئة.',
+    'faq2-q': 'كم يستغرق تنفيذ الطلاء؟',
+    'faq2-a': 'يعتمد على حجم المشروع وتعقيده. الغرفة السكنية عادة 2–3 أيام، والمشاريع الكبيرة 1–2 أسبوع.',
+    'faq3-q': 'هل تقدمون استشارة ألوان؟',
+    'faq3-a': 'نعم، نقدم استشارة ألوان لمساعدتك على اختيار لوحة تناسب أسلوبك والإضاءة.',
+
+    // Portfolio
+    'portfolio-title': 'مشاريعنا الأخيرة',
+    'portfolio-subtitle': 'اكتشف أحدث أعمالنا التي تُظهر جودة الحرفة والاهتمام بالتفاصيل',
+    'filter-all': 'الكل',
+    'filter-gypsum': 'الجبس',
+    'filter-painting': 'الطلاء',
+    'filter-ceilings': 'الأسقف',
+    'filter-minimal': 'البساطة',
+
+    // Process
+    'process-title': 'عملية عملنا',
+    'process-subtitle': 'من الاستشارة إلى التسليم نضمن الجودة في كل خطوة',
+    'step1-title': 'الاستشارة',
+    'step1-desc': 'زيارة أولية وتحليل المتطلبات',
+    'step2-title': 'التصميم',
+    'step2-desc': 'تصميم مخصص وتخطيط المواد',
+    'step3-title': 'المواد',
+    'step3-desc': 'توريد مواد عالية الجودة',
+    'step4-title': 'التنفيذ',
+    'step4-desc': 'تركيب وتشطيب احترافي',
+    'step5-title': 'التسليم',
+    'step5-desc': 'فحص نهائي وتسليم المشروع',
+
+    // Testimonials
+    'testimonials-title': 'ما يقوله عملاؤنا',
+    'testimonials-subtitle': 'آراء حقيقية من عملاء راضين في الإمارات',
+    'testimonial1-text': 'جودة عمل استثنائية واهتمام بالتفاصيل. سقف الجبس في فيلتنا رائع!',
+    'testimonial1-author': 'أحمد المنصوري، أبوظبي',
+    'testimonial2-text': 'فريق محترف ومواد عالية الجودة وإنجاز في الموعد.',
+    'testimonial2-author': 'سارة جونسون، دبي',
+    'testimonial3-text': 'أفضل شركة ديكور! التصميم غيّر غرفة المعيشة بالكامل.',
+    'testimonial3-author': 'محمد حسان، العين',
+    'testimonial4-text': 'جودة ممتازة وسعر منافس وإنجاز وفق الجدول.',
+    'testimonial4-author': 'ليزا مارتينيز، أبوظبي',
+
+    // About
+    'about-title': 'لماذا تختار قصر الشمالي؟',
+    'about-text': 'أكثر من 17 عاماً خبرة في خدمات الجبس والدهان في الإمارات، مع التزام بالتميز ورضا العملاء.',
+    'about-point1': 'التزام بإنجاز المشروع في الوقت',
+    'about-point2': 'مواد فاخرة فقط',
+    'about-point3': 'ضمان شامل',
+    'about-point4': 'فنيون ومصممون خبراء',
+    'about-point5': 'تسعير شفاف',
+    'about-point6': 'دعم 24/7',
+
+    // CTA
+    'cta-title': 'جاهز لتحويل مساحتك؟',
+    'cta-subtitle': 'احصل على استشارة مجانية وعرض سعر',
+    'cta-button': 'احصل على عرض سعر مجاني',
+
+    // Contact
+    'contact-title': 'اتصل بنا',
+    'contact-subtitle': 'مستعد لبدء مشروعك؟ تواصل مع فريقنا',
+    'form-name': 'الاسم الكامل *',
+    'form-phone': 'رقم الهاتف *',
+    'form-city': 'المدينة',
+    'form-service': 'الخدمة المطلوبة',
+    'form-message': 'تفاصيل المشروع',
+    'form-submit': 'إرسال الرسالة',
+    'contact-info-title': 'تواصل معنا',
+    'contact-phone-label': 'الهاتف',
+    'contact-whatsapp-label': 'واتساب',
+    'contact-email-label': 'البريد الإلكتروني',
+    'contact-areas-label': 'مناطق الخدمة',
+    'contact-areas': 'أبوظبي، العين',
+    'contact-hours-label': 'ساعات العمل',
+    'contact-hours': '24/7',
+
+    // Footer
+    'footer-company': 'قصر الشمالي',
+    'footer-tagline': 'جبس ودهان عصري للديكورات الأنيقة في الإمارات',
+    'footer-services-title': 'الخدمات',
+    'footer-service1': 'ألواح الجبس والأسقف',
+    'footer-service2': 'طلاء داخلي وخارجي',
+    'footer-service3': 'تشطيبات ديكورية',
+    'footer-service4': 'جدران مميزة',
+    'footer-service5': 'تكامل الإضاءة',
+    'footer-links-title': 'روابط سريعة',
+    'footer-link1': 'الرئيسية',
+    'footer-link2': 'من نحن',
+    'footer-link3': 'معرض الأعمال',
+    'footer-link4': 'آراء العملاء',
+    'footer-link5': 'اتصل بنا',
+    'footer-areas-title': 'مناطق الخدمة',
+    'footer-area1': 'أبوظبي',
+    'footer-area2': 'العين',
+    'footer-hours': 'ساعات العمل:',
+    'footer-hours-detail': '24/7',
+    'footer-rights': 'جميع الحقوق محفوظة.',
+
+    // Cookie & Toast
+    'cookie-message': 'نستخدم ملفات تعريف الارتباط لتحسين تجربتك.',
+    'cookie-accept': 'موافق',
+    'form-success': 'تم إرسال الرسالة بنجاح! سنتواصل معك قريباً.',
+    'form-error': 'يرجى ملء الحقول المطلوبة بشكل صحيح.'
+  }
+};
+
+        let currentLang = 'en';
+        let isCarouselPaused = false;
+        let currentSlide = 0;
+
+        // DOM Elements
+        const navToggle = document.getElementById('nav-toggle');
+        const nav = document.getElementById('nav');
+        const backToTop = document.getElementById('back-to-top');
+        const cookieBanner = document.getElementById('cookie-banner');
+        const toast = document.getElementById('toast');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeComponents();
+            showCookieBanner();
+            startCounterAnimations();
+            initializeCarousel();
+            initializeLazyLoading();
+        });
+
+        function initializeComponents() {
+            // Navigation
+            setupNavigation();
+            setupSmoothScrolling();
+            setupScrollEffects();
+            
+            // Interactive components
+            setupBeforeAfterSlider();
+            setupPortfolioFilter();
+            setupFAQ();
+            setupFormValidation();
+            setupLanguageSwitch();
+            
+            // Event listeners
+            setupEventListeners();
+        }
+
+        function setupNavigation() {
+            navToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+
+            // Close nav on link click (mobile)
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                });
+            });
+
+            // Active nav link highlighting
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section[id]');
+
+            function updateActiveNavLink() {
+                const scrollPos = window.scrollY + 100;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        const activeLink = document.querySelector(`a[href="#${sectionId}"]`);
+                        if (activeLink) activeLink.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveNavLink);
+        }
+
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        function setupScrollEffects() {
+            // Intersection Observer for fade animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Back to top button
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 500) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        function setupBeforeAfterSlider() {
+            const slider = document.querySelector('.before-after__slider');
+            const afterImage = document.querySelector('.before-after__after');
+            
+            if (!slider || !afterImage) return;
+
+            let isDragging = false;
+
+            function updateSlider(clientX, container) {
+                const rect = container.getBoundingClientRect();
+                const percentage = Math.max(0, Math.min(100, ((clientX - rect.left) / rect.width) * 100));
+                
+                slider.style.left = percentage + '%';
+                afterImage.style.clipPath = `polygon(${percentage}% 0%, 100% 0%, 100% 100%, ${percentage}% 100%)`;
+            }
+
+            slider.addEventListener('mousedown', function(e) {
+                isDragging = true;
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                const container = document.querySelector('.before-after__container');
+                updateSlider(e.clientX, container);
+            });
+
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+            });
+
+            // Touch events
+            slider.addEventListener('touchstart', function(e) {
+                isDragging = true;
+                e.preventDefault();
+            });
+
+            document.addEventListener('touchmove', function(e) {
+                if (!isDragging) return;
+                const container = document.querySelector('.before-after__container');
+                const touch = e.touches[0];
+                updateSlider(touch.clientX, container);
+            });
+
+            document.addEventListener('touchend', function() {
+                isDragging = false;
+            });
+        }
+
+        function setupPortfolioFilter() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    // Filter items
+                    portfolioItems.forEach(item => {
+                        const categories = item.getAttribute('data-category');
+                        if (filter === 'all' || categories.includes(filter)) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            // Lightbox functionality
+            portfolioItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imageSrc = this.getAttribute('data-image');
+                    // TODO: Replace with actual image loading
+                    lightboxContent.innerHTML = `
+                        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                        <div style="padding: 2rem; text-align: center; background: var(--light-gray); height: 400px; display: flex; align-items: center; justify-content: center;">
+                            <p>Portfolio Image: ${imageSrc}</p>
+                        </div>
+                    `;
+                    lightbox.classList.add('active');
+                });
+            });
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        function setupFAQ() {
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', function() {
+      const faqItem = this.parentElement;
+      const wasActive = faqItem.classList.contains('active');
+
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+        const icon = item.querySelector('.faq-question span:last-child');
+        if (icon) icon.textContent = '+';
+      });
+
+      if (!wasActive) {
+        faqItem.classList.add('active');
+        this.querySelector('span:last-child').textContent = '–';
+      }
+    });
+  });
+}
+
+
+        function startCounterAnimations() {
+            const counters = document.querySelectorAll('[data-target]');
+            const speed = 200;
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const increment = target / speed;
+                        let current = 0;
+
+                        const updateCounter = () => {
+                            if (current < target) {
+                                current += increment;
+                                counter.textContent = Math.ceil(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.textContent = target;
+                            }
+                        };
+
+                        updateCounter();
+                        observer.unobserve(counter);
+                    }
+                });
+            });
+
+            counters.forEach(counter => observer.observe(counter));
+        }
+
+        function initializeCarousel() {
+            const testimonials = document.querySelectorAll('.testimonial');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            function showSlide(index) {
+                testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                testimonials[index].classList.add('active');
+                dots[index].classList.add('active');
+                currentSlide = index;
+            }
+
+            function nextSlide() {
+                if (isCarouselPaused) return;
+                const nextIndex = (currentSlide + 1) % testimonials.length;
+                showSlide(nextIndex);
+            }
+
+            // Auto-advance carousel
+            setInterval(nextSlide, 5000);
+
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => showSlide(index));
+            });
+
+            // Pause on hover
+            const carousel = document.querySelector('.testimonials-carousel');
+            carousel.addEventListener('mouseenter', () => isCarouselPaused = true);
+            carousel.addEventListener('mouseleave', () => isCarouselPaused = false);
+        }
+
+        function initializeLazyLoading() {
+            // Implement lazy loading for portfolio images
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // TODO: Load actual images here
+                        imageObserver.unobserve(entry.target);
+                    }
+                });
+            });
+
+            document.querySelectorAll('.portfolio-item').forEach(item => {
+                imageObserver.observe(item);
+            });
+        }
+
+        function setupFormValidation() {
+            const form = document.getElementById('contact-form');
+            const nameField = document.getElementById('name');
+            const phoneField = document.getElementById('phone');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Clear previous errors
+                document.querySelectorAll('.error-message').forEach(error => {
+                    error.style.display = 'none';
+                });
+                document.querySelectorAll('.form-control').forEach(field => {
+                    field.classList.remove('error');
+                });
+
+                // Validate name
+                if (!nameField.value.trim()) {
+                    showFieldError('name', 'Name is required');
+                    isValid = false;
+                }
+
+                // Validate phone
+                const phonePattern = /^[\+]?[0-9]{10,15}$/;
+                if (!phoneField.value.trim()) {
+                    showFieldError('phone', 'Phone number is required');
+                    isValid = false;
+                } else if (!phonePattern.test(phoneField.value.replace(/\s+/g, ''))) {
+                    showFieldError('phone', 'Please enter a valid phone number');
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    // Create WhatsApp and mailto links
+                    const formData = new FormData(form);
+                    const message = createMessageFromForm(formData);
+                    
+                    // Show success toast
+                    showToast(translations[currentLang]['form-success'], 'success');
+                    
+                    // Reset form
+                    form.reset();
+                    
+                    // Open WhatsApp (optional)
+                    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+                    // window.open(whatsappUrl, '_blank');
+                } else {
+                    showToast(translations[currentLang]['form-error'], 'error');
+                }
+            });
+        }
+
+        function showFieldError(fieldId, message) {
+            const field = document.getElementById(fieldId);
+            const errorElement = document.getElementById(fieldId + '-error');
+            
+            field.classList.add('error');
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        function createMessageFromForm(formData) {
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const city = formData.get('city');
+            const service = formData.get('service');
+            const message = formData.get('message');
+            
+            return `Hello! I'm interested in your decoration services.
+            
+Name: ${name}
+Phone: ${phone}
+${city ? `City: ${city}` : ''}
+${service ? `Service: ${service}` : ''}
+${message ? `Message: ${message}` : ''}
+
+Please contact me for a consultation.`;
+        }
+
+        function showToast(message, type = 'success') {
+            toast.textContent = message;
+            toast.className = `toast ${type}`;
+            toast.classList.add('visible');
+
+            setTimeout(() => {
+                toast.classList.remove('visible');
+            }, 4000);
+        }
+
+        function setupLanguageSwitch() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    switchLanguage(lang);
+                    
+                    // Update button states
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        }
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            const html = document.documentElement;
+            
+            // Update HTML attributes
+            html.setAttribute('lang', lang);
+            html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[lang] && translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.setAttribute('placeholder', translations[lang][key]);
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Update phone numbers
+            updatePhoneNumbers();
+        }
+
+        function updatePhoneNumbers() {
+  const digits = COMPANY_PHONE.replace(/\D/g, '');        // "0500000000"
+  const e164 = digits.startsWith('971')
+    ? '+' + digits
+    : '+971' + digits.replace(/^0/, '');                  // -> "+971500000000"
+
+  document.getElementById('phone-display').textContent = COMPANY_PHONE;
+  document.getElementById('contact-phone-display').textContent = COMPANY_PHONE;
+
+  document.getElementById('phone-link').href = `tel:${e164}`;
+  document.getElementById('whatsapp-link').href = `https://wa.me/${WHATSAPP_NUMBER}`;
+  document.getElementById('whatsapp-cta').href = `https://wa.me/${WHATSAPP_NUMBER}`;
+  document.getElementById('whatsapp-contact').href = `https://wa.me/${WHATSAPP_NUMBER}`;
+}
+
+
+        function setupEventListeners() {
+            // Color palette interaction
+            document.querySelectorAll('.color-chip').forEach(chip => {
+                chip.addEventListener('click', function() {
+                    // Add some visual feedback
+                    this.style.transform = 'scale(1.2)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 200);
+                });
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                    nav.classList.remove('active');
+                }
+            });
+        }
+
+        function showCookieBanner() {
+            // Check if user has already accepted cookies
+            if (!localStorage.getItem('cookies-accepted')) {
+                setTimeout(() => {
+                    cookieBanner.classList.add('visible');
+                }, 2000);
+            }
+
+            document.getElementById('cookie-accept').addEventListener('click', function() {
+                localStorage.setItem('cookies-accepted', 'true');
+                cookieBanner.classList.remove('visible');
+            });
+        }
+
+        // Update phone numbers on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updatePhoneNumbers();
+        });
+    </script>
+</body>
